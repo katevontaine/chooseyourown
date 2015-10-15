@@ -29,11 +29,9 @@ console.log("Who will be your companion? Starfish, Octopus, or Jellyfish?", comp
 
 if(companions === "Starfish");{
   console.log('You are headed to the coast of California.');
-
 }
 if(companions === "Octopus");{
   console.log('You are headed to the Indian Ocean.');
-
 }
 if(companions === "Jellyfish");{
    console.log('You are headed to the North American Atlantic Coast.');
