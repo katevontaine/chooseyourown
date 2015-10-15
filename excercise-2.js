@@ -52,8 +52,6 @@ function sayHi() {
 
 setTimeout(sayHi, 2000);
 
-
-
 // Put your answer below -------------------------
 
 var sayHi = function(){
@@ -114,7 +112,9 @@ var reverseStr = function(str) {
 
 // Put your answer below -------------------------
 
-
+var reverseStr = function(str) {
+  return str.split("").reverse().join("");
+}
 // -----------------------------------------------
 
 //////////////////////////////////////////////////
@@ -148,6 +148,13 @@ var spanishColor = function(colorName) {
 
 // Put your answer below -------------------------
 
+var spanishObj={
+  rojo: "#ff0000",
+  blanco: "#ffffff",
+  azul: "#0000ff",
+  verde: "#00ff00",
+  negro:"#000000"
+}
 
 // -----------------------------------------------
 
@@ -164,7 +171,8 @@ var spanishColor = function(colorName) {
 var foo = "bar";
 
 // Put your answer below -------------------------
-
+bar = foo
+var foo = bar
 
 // -----------------------------------------------
 
@@ -188,7 +196,11 @@ var callTenTimes = function(callback) {
 
 // Put your answer below -------------------------
 
-
+var callNTimes = function (callback){
+  for (var i=0; i <= n ; i++){
+    console.log(callback);
+  }
+}
 
 // -----------------------------------------------
 
@@ -208,7 +220,7 @@ var callTenTimes = function(callback) {
 var score = 0;
 
 var increaseScore = function() {
-  score++;
+  console.log(score++;
 };
 
 var decreaseScore = function() {
@@ -216,8 +228,17 @@ var decreaseScore = function() {
 };
 
 // Put your answer below -------------------------
+function game() {
+var score = 0;
 
+var increaseScore = function() {
+  (score++)
+  };
 
+  var decreaseScore = function() {
+    (score--)
+  };
+}
 // -----------------------------------------------
 
 //////////////////////////////////////////////////
@@ -237,6 +258,12 @@ var twoPlusTwo = addNumbers(2,2);
 
 // Put your answer below -------------------------
 
+
+function addNumbers(numberA, numberB){
+  console.log(numberA = numberB)
+  return numberA=numberB;
+}
+var twoPlusTwo = addNumbers(2,2);
 
 // -----------------------------------------------
 
@@ -262,7 +289,12 @@ var accelerate = function(amount) {
 };
 
 // Put your answer below -------------------------
-
+for (var i=0, speed=1; i = i=1){
+  var speed = [i];
+  var accelerate = function(amount) {
+    speed += amount;
+  };
+}
 
 // -----------------------------------------------
 
