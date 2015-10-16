@@ -42,7 +42,6 @@
  * Write a JavaScript program that calculates the average time for this marathoner to complete the full marathon (26.2mi)
  */
 
-//avg 219.88333333333335
 var matt = {
     finishingTime1: 240, //in minutes
     finishingTime2: 210.4,
@@ -60,22 +59,23 @@ var mark = {
     finishingTime5: 97.5
 };
 
-
- var getAverageTime = function(person) {
-        var avg=0;
-        var inc=0;
- for (var i in person) {
-      avg +=  person[i];
-      console.log(person[i]);
-      inc++;
-
- }
-  avg= avg/inc;
- return avg;
- }
+//help from jacob
+ // var getAverageTime = function(person) {
+ //        var avg=0;
+ //        var inc=0;
+ // for (var i in person) {
+ //      avg +=  person[i];
+ //      console.log(person[i]);
+ //
+ //
+ // }
+ //  avg= avg/inc;
+ // return avg;
+ // }
 
 console.log(getAverageTime(matt)); 219.88333333333335
 console.log(getAverageTime(mark)); 114.38
+//////////////////////////////////////////////////\\\\\\\\\\\\\\\\\\\\\\\\\\\
 
 
 /**
@@ -108,9 +108,9 @@ function addToBank(account, savings, retirement, checking) {
     account.checking = account.checking + checking;
 }
 
-function getSumOfAccounts(accounts) {
+function getSumOfAccounts(account) {
     "use strict";
-  return account.savings + account.retirement + accounts.checking
+  return account.savings + account.retirement + account.checking
 }
 
 addToBank(MattsBankAccount, 100, 10, 1);

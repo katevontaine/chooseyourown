@@ -11,14 +11,18 @@
 
 // 0. write your own forEach() that takes two arguments: an array, and a callback
 
-function forEach(array, callback){
-    // YOUR CODE HERE
+  function forEach(kate, callback){
+    //no matter what array, run the callback on each item in the array
+    for(var i = 0; i < kate.length; i++) {
+      callback(kate[i]);
+    }
+  }
 
-}
-
+ var kate = [1,2,3,4]
 // testing your code with console.assert
 var total = 1;
-forEach([1, 2, 3, 4], function(a){ total *= a; });
+forEach([1,2,3,4], function(a) { total *= a });
+console.log(total);
 // and finally assert; if this fails, the program stops
 console.assert(total === 24);
 
