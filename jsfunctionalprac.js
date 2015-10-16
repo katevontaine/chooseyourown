@@ -30,14 +30,24 @@ console.assert(total === 24);
 // 1. calculate the sum of numbers (returns the sum (A NUMBER))
 
 function sum(){
-    // parse arguments into an array
-    var args = [].slice.call(arguments);
-
-    // .. do something with each element of args
-    // YOUR CODE HERE
+  parseInt.assert = newString
+    var args = [newString].slice.call(parseInt);
+    {
+      for (var i=0; i < newString.length; i++){
+        newString[i] = +newString[i];
+        return i;
+      }
+    }
 }
 
 console.assert( sum(1, 2, 3, 4, 5) === 15 )
+
+
+
+
+
+
+
 
 // 2. calculate the average of numbers (returns the average (A NUMBER))
 
@@ -51,6 +61,15 @@ function average(){
 
 console.assert( average(2, 4, 6, 8) === 5 )
 
+
+
+
+
+
+
+
+
+
 // 3. find the largest number of the inputs (returns the largest input (A NUMBER))
 
 function largest(){
@@ -63,6 +82,15 @@ function largest(){
 
 console.assert( largest(2, 4, 6, 8) === 8 )
 
+
+
+
+
+
+
+
+
+
 // 4. find the longest string of the inputs (returns the longest input (A STRING))
 
 function longest(){
@@ -74,6 +102,10 @@ function longest(){
 }
 
  console.assert( longest("this", "is", "a", "awesome", "function") === "function" );
+
+
+
+
 
 /**
  * PART II

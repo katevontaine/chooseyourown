@@ -260,8 +260,8 @@ var twoPlusTwo = addNumbers(2,2);
 
 
 function addNumbers(numberA, numberB){
-  console.log(numberA = numberB)
-  return numberA=numberB;
+  console.log(numberA + numberB)
+  return numberA+numberB;
 }
 var twoPlusTwo = addNumbers(2,2);
 
@@ -289,11 +289,11 @@ var accelerate = function(amount) {
 };
 
 // Put your answer below -------------------------
-for (var i=0, speed=1; i = i=1){
-  var speed = [i];
+
   var accelerate = function(amount) {
-    speed += amount;
-  };
+    for (var i=0, speed=1; i = i=1){
+      var speed = [i];
+      return speed;
 }
 
 // -----------------------------------------------

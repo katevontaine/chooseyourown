@@ -50,7 +50,6 @@ var matt = {
     finishingTime5: 197.5,
     finishingTime6: 227.4
 };
-//avg 114.38
 var mark = {
     finishingTime1: 120, //in minutes
     finishingTime2: 110.4,
@@ -58,6 +57,30 @@ var mark = {
     finishingTime4: 108.9,
     finishingTime5: 97.5
 };
+
+
+
+
+var averageTime = function(runner){
+  var avg=0;
+  var inc=0;
+  for (var i in runner){
+    avg += runner[i];
+    console.log(runner[i]);
+    inc++;
+
+  }
+  avg=avg/inc;
+  return avg;
+}
+
+
+
+
+
+
+
+
 
 //help from jacob
  // var getAverageTime = function(person) {
