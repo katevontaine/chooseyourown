@@ -1,5 +1,5 @@
 
-/**
+/*
  * Part I: use any of the looping methods discussed in class
  *
  * 1. for loop,
@@ -30,81 +30,79 @@ console.assert(total === 24);
 // 1. calculate the sum of numbers (returns the sum (A NUMBER))
 
 function sum(){
-  parseInt.assert = newString
-    var args = [newString].slice.call(parseInt);
-    {
-      for (var i=0; i < newString.length; i++){
-        newString[i] = +newString[i];
-        return i;
-      }
-    }
+    var args = [].slice.call(arguments);
+    var total =0;
+    for (var i=0; i< args.length; i++)
+    total = total + args[i];
+    // return total;
+    // args.forEach(function(el, idx, arr){
+    //   total += el;
+    })
+    return total;
+
+}
+
+or
+
+function sum(){
+    var args = [].slice.call(arguments);
+    var total =0;
+    args.forEach(function(el, idx, arr){
+      total += el;
+    })
+    return total;
+
 }
 
 console.assert( sum(1, 2, 3, 4, 5) === 15 )
 
 
-
-
-
-
-
-
 // 2. calculate the average of numbers (returns the average (A NUMBER))
 
 function average(){
-    // parse arguments into an array
     var args = [].slice.call(arguments);
-
-    // .. do something with each element of args
-    // YOUR CODE HERE
+    args.forEach(function (el, indx)){
+      var total +=el;
+    };
+    var avg = total/indx
+    return avg
 }
 
 console.assert( average(2, 4, 6, 8) === 5 )
 
 
 
-
-
-
-
-
-
-
 // 3. find the largest number of the inputs (returns the largest input (A NUMBER))
 
 function largest(){
-    // parse arguments into an array
     var args = [].slice.call(arguments);
+    var largestel = args[0];
+    args.forEach(function (el, indx, arr){
+      if (el>largestel){
+        largestel = el;
+      }
 
-    // .. do something with each element of args
-    // YOUR CODE HERE
+    })
+return largestel;
 }
 
 console.assert( largest(2, 4, 6, 8) === 8 )
-
-
-
-
-
-
-
-
+largest(-5,-3,-7,-8);
 
 
 // 4. find the longest string of the inputs (returns the longest input (A STRING))
 
-function longest(){
-    // parse arguments into an array
+function findLongest(){
     var args = [].slice.call(arguments);
-
-    // .. do something with each element of args
-    // YOUR CODE HERE
+    var longest = [0];
+    for (var i = 0; i < args.length; i++){
+      if(args[i.length]> longest.length)
+      longest = args[i];
+    }
+    return longest;
 }
 
- console.assert( longest("this", "is", "a", "awesome", "function") === "function" );
-
-
-
+ console.assert( findLongest("this", "is", "a", "awesome", "function") === "function" );
 
 
 /**
