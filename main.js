@@ -1,4 +1,5 @@
 
+
 var welcome;
 welcome = confirm;
 confirm("Are you ready to enter the Aegean?");
@@ -17,7 +18,7 @@ console.log("Do you align with the Sun or the Moon?", sunormoon);
 if(sunormoon === "Sun, sun"){
   console.log('You are not a real mermaid. Nice try'); alert(text);
 }
-else if(sunormoon === "Moon, moon"){
+if(sunormoon === "Moon, moon"){
    console.log('Welcome Mermaid Friend!');
 
 };

@@ -12,7 +12,6 @@
 // 0. write your own forEach() that takes two arguments: an array, and a callback
 
   function forEach(kate, callback){
-    //no matter what array, run the callback on each item in the array
     for(var i = 0; i < kate.length; i++) {
       callback(kate[i]);
     }
@@ -115,27 +114,59 @@ function findLongest(){
  */
 
 // .sort()
+var colors = ["pink", "green", "yellow", "blue"]
+colors.sort()
+console.assert(colors.sort())
+
 
 // .concat()
+var cat = ["calico", "spotted", "striped"]
+var num = ["1", "2", "3"]
+var concatted = cat.concat(num);
 
 // .indexOf()
+var welcome="Hello, my name is Kate.";
+welcome.indexOf("name");
 
 // .split()
+var greeting ="Hi, how are you?";
+greeting.split("how");
 
 // .join()
+var sports = ["bball", "soccor", "football"];
+var conf = sports.join();
 
 // .pop()
+var sports = ["bball", "soccor", "football"];
+sports.pop();
 
 // .push()
+var sports = ["bball", "soccor", "football"];
+sports.push();
 
 // .slice()
+var sports = ["bball", "soccor", "football"];
+sports.slice();
 
 // .splice()
+var sports = ["bball", "soccor", "football"];
+sports.splice();
 
 // .shift()
+var sports = ["bball", "soccor", "football"];
+sports.shift();
 
 // .unshift()
+var sports = ["bball", "soccor", "football"];
+sports.unshift();
 
 // .filter()
+var numbers = ["1", "2", "13", "14", "15", "16", "20", "25"];
+
+function isSmall(value){
+  return value >=15;
+}
+
 
 // .map()
+?
